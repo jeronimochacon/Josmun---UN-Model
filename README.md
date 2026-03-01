@@ -25,7 +25,9 @@ This project was designed and developed to provide a centralized digital platfor
 ## 📷 Screenshots
 
 ![Homepage](./screenshots/home.png)
+![Menu](./screenshots/menu.png)
 ![Committees](./screenshots/committees.png)
+![Mobile](./screenshots/Mobile.png)
 
 ## 🔗 Live Demo
 
