@@ -1,0 +1,839 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    max-width: 2000px;
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+    font-style: normal;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.s-space {
+    width: 100%;
+    height: 1rem;
+}
+
+.handwritten {
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.relative {
+    position: relative;
+    top: 25%;
+    transition: all 0.25s ease-in-out;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.absolute {
+    transform: translateY(-100%);
+    opacity: 1; 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.big {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.primary-f {
+    color: #0c3972;
+    font-weight: 500;
+    transition: 0.25s;
+
+}
+
+.primary-f:hover {
+    color: #89b7f0;
+    transition: 0.25s;
+}
+
+.nav {
+    background-color: white;
+    width: 100%;
+    padding: 1.5%;
+    font-weight: 600;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    display: flex;
+    justify-content: start;
+}
+
+.nav-logos {
+    display: flex;
+    max-width: 50%;
+}
+
+.josema-slogan img {
+    width: 85%;
+}
+
+.Josema-1 img {
+    width: 35%;
+    margin-left: 15%;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.nav-links {
+    font-size: 2rem;
+    font-weight: 500;
+    align-content: center;
+    color: #0c3972;
+    margin-right: 12.5%;
+    transition: 0.25s;
+}
+
+.nav-links:hover {
+    color: #89b7f0;
+    transition: 0.25s;
+}
+
+.nav-minimize {
+    display: none;
+}
+
+.nav-menu {
+    position: relative;
+}
+
+.menu-link {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    background: white;
+    border-radius: 15px;
+    display: none;
+    min-width: 150px;
+    font-size: 2rem;
+    transition: 0.25s;
+    padding: 7.5px;
+}
+
+.nav-menu:hover .nav-dropdown {
+    display: block;
+}
+
+.nav-form img {
+    width: 70%;
+    margin-left: 75%;
+    border-radius: 0;
+    transition: 0.25s;
+}
+
+.nav-form img:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+}
+
+.box {
+    position: relative;
+    background-image: url(../Images/resource-bg-4.webp);
+    height: 1700px;
+}
+
+.card {
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    margin-left: 13%;
+    margin-top: 9%;
+    background-color: white;
+    text-align: center;
+    padding: 7.5%;
+    border-radius:25px;
+}
+
+.card-h {
+    color: #0c3972;
+    font-size: 2.25rem;
+}
+
+.card-p {
+    color: black;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+.faded {
+    background: #0C3972;
+    background: linear-gradient(90deg, rgba(12, 57, 114, 1) 0%, rgba(137, 183, 240, 1) 100%);
+    color: transparent;
+    background-clip: text;
+    font-size: 1.5rem;
+}
+
+.by {
+    color: #0c3972;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.xs-line {
+    width: 50px;
+    border: 2.5px solid #89b7f0;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.xs-space {
+    width: 100%;
+    height: 1rem;
+    margin: 1%;
+}
+
+
+.footer {
+    display: grid;
+    width: 100%;
+    height: 150px;
+    background-color: #0c3972;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+}
+
+.footer-logo {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 35%;
+}
+
+.footer-links {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.social-media img {
+    width: 20px;
+}
+
+.footer-school {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.footer-school img {
+    width: 20%;
+}
+
+.copyright {
+    display: block;
+    color: white;
+    font-weight: 500;
+    padding-left: 2.5%;
+}
+
+@media (max-width: 1200px) {
+    
+    .main-grid {
+        display: grid;
+        margin: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        column-gap: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 1127px) {
+    .Josema-1 img {
+        display: none;
+    }
+
+    .nav-logos {
+        max-width: 40%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    
+    .Josema-1 img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1075px) {
+    .nav-bar {
+      display: none; 
+      flex-direction: row;
+      position: absolute;
+      top: 100%;
+      left: 15%;
+      width: 70%;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 0 0 15px 15px;
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-minimize {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        align-content: center;
+        margin-left: 50%;
+        transition: 0.25s;
+    }
+
+    .nav-dropdown {
+        top: 90%;
+        left: 25%;
+        padding: 5px;
+    }
+
+    .josema-slogan img {
+        width: 110%;
+        margin-left: 5%;
+    }
+
+    .Josema-1 img {
+        width: 25%;
+        margin-left: 25%;
+    }
+
+    .nav-form img {
+        width: 25%;
+        margin-left: 50%;
+    }
+
+
+    .footer-logo img {
+        width: 50%;
+    }
+
+    .footer-school img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 880px) {
+    .nav-links {
+        font-size: 1.5rem;
+    }
+
+    .nav-dropdown {
+        font-size: 1.5rem;
+    }
+
+    .nav-form img {
+        width: 20%;
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-form img {
+        width: 25%;
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .nav-form img {
+        width: 30%;
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-form img {
+        width: 35%;
+        margin-left: 50%;
+    }
+}
+
+.nav-bar.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+@media (max-width: 650px) {
+
+    .josema-slogan img {
+        width: 160%;
+        margin-left: 10%;
+    }
+
+    .Josema-1 img {
+        width: 30%;
+        margin-left: 50%;
+    }
+
+    .primary-f {
+        font-size: 1.5rem;
+    }
+
+    .grid-specific p {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+
+@media (max-width: 675px) {
+    #josema-png {
+        display: none;
+    }
+
+    .josema-slogan img {
+        width: 180%;
+        margin-left: 15%;
+    }
+
+    .nav-bar {
+        left: 0;
+    }
+
+    .c-committees img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .featured-committees {
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .nav-links {
+        font-size: 1.25rem;
+    }
+
+    .nav-dropdown {
+        font-size: 1.25rem;
+    }
+
+    .primary-f {
+        font-size: 1.25rem;
+    }
+
+    .grid-specific p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-links {
+        font-size: 1rem;
+    }
+
+    .nav-dropdown {
+        font-size: 1rem;
+    }
+
+    .primary-f {
+        font-size: 1rem;
+    }
+
+    .grid-specific p {
+        font-size: 0.8rem;
+    }
+
+    .nav-bar {
+        left: 0;
+    }
+
+    .footer-logo img {
+        width: 60%;
+    }
+
+    .footer-school img {
+        width: 30%;
+    }
+}
+
+@media (max-width: 450px) {
+    .nav-links {
+        font-size: .85rem;
+    }
+
+    .nav-dropdown {
+        font-size: .85rem;
+    }
+
+    .primary-f {
+        font-size: .85rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav-links {
+        font-size: .80rem;
+    }
+
+    .nav-dropdown {
+        font-size: .80rem;
+    }
+
+    .primary-f {
+        font-size: .80rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-links {
+        font-size: .80rem;
+    }
+
+    .nav-dropdown {
+        font-size: .80rem;
+    }
+
+    .primary-f {
+        font-size: .80rem;
+    }
+
+    .nav-form img {
+        width: 40%;
+        margin-left: 50%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .nav-links {
+        font-size: .75rem;
+    }
+
+    .nav-dropdown {
+        font-size: .75rem;
+    }
+
+    .primary-f {
+        font-size: .75rem;
+    }
+
+    .nav-form img {
+        width: 40%;
+        margin-left: 50%;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 340px) {
+    .nav-links {
+        font-size: .7rem;
+    }
+
+    .nav-dropdown {
+        font-size: .7rem;
+    }
+
+    .primary-f {
+        font-size: .7rem;
+    }
+
+    .nav-form img {
+        width: 40%;
+        margin-left: 50%;
+        border-radius: 0;
+    }
+}
+
+
+@media (min-width: 1600px) {
+   
+    .nav-bar {
+        margin-left: 15%;
+    }
+
+    .nav-links {
+        font-size: 2.5rem;
+    }
+
+    .nav-dropdown {
+        font-size: 2.5rem;
+    }
+
+    .big {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 426px) {
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 382px) {
+
+    .copyright {
+        font-size: 10.5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box {
+        height: 1900px;
+    }
+    .card {
+        height: 85%;
+    }
+}
+
+@media (max-width: 850px) {
+    .box {
+        height: 2000px;
+    }
+    .card {
+        height: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    .box {
+        height: 1900px;
+    }
+
+    .card {
+        height: 85%;
+    }
+
+    .card-h {
+        font-size: 2rem;
+    }
+
+    .card-p {
+        font-size: 1.1rem;
+    }
+
+    .faded {
+        font-size: 1.5rem;
+    }
+
+    .by {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .box {
+        height: 1900px;
+    }
+    .card {
+        height: 90%;
+    }
+}
+
+@media (max-width: 575px) {
+    .box {
+        height: 1900px;
+    }
+    .card {
+        height: 95%;
+    }
+}
+
+@media (max-width: 525px) {
+    .box {
+        height: 1900px;
+    }
+    .card {
+        height: 95%;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .box {
+        height: 1900px;
+    }
+    .card {
+        height: 95%;
+        width: 85%;
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 450px) {
+    .box {
+        height: 1900px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .box {
+        height: 1950px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 410px) {
+    .box {
+        height: 2050px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 390px) {
+    .box {
+        height: 2075px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    .box {
+        height: 2100px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 360px) {
+    .box {
+        height: 2150px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 350px) {
+    .box {
+        height: 2210px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 340px) {
+    .box {
+        height: 2270px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 335px) {
+    .box {
+        height: 2300px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 330px) {
+    .box {
+        height: 2350px;
+    }
+    .card {
+        height: 95%;
+        width: 90%;
+        margin-left: 5%;
+    }
+}
